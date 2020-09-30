@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>応用課題④</title>
+    <meta charset="UTF-8">
+    <style>
+      h1{
+        text-align: center;
+      }
+      body{
+        width:700px;
+        border:solid 1px;
+        display: inline-block;
+      }
+      .opponent{
+        text-align: center;
+        border: solid 3px;
+        width:200px;
+        height:200px;
+        margin-left: 236px;
+     
+      }
+      .gu{
+        float:left;
+        margin:10px;
+        border: solid 3px;
+        width:200px;
+        height:200px;
+      }
+      .tyoki{
+        margin:10px;
+        float:left;
+        border: solid 3px;
+        width:200px;
+        height:200px;
+      }
+      .pa{
+        margin:10px;
+        float:left;
+        border: solid 3px;
+        width:200px;
+        height:200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>相手</h1>
+    <div class="opponent" id="aite">
+    </div>
+
+    <div class="gu" id="gu">
+      <img src="js_ジャンケン1.png" width="200" onclick="select()">
+    </div>
+    <div class="tyoki" id="tyoki">
+      <img src="js_ジャンケン2.png" width="200" onclick="select2()">
+    </div>
+    <div class="pa" id="pa">
+      <img src="js_ジャンケン_01-1024x868.png" width="200" onclick="select3()">
+    </div>
+    <h1 id="result"></h1>
+  <script type="text/javascript" src="script.js"></script>  
+  </body>
+</html>

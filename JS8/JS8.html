@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>応用課題8</title>
+    <meta charset="UTF-8">
+    <style>
+      p{
+        text-align: center;
+        font-size: 30px;
+        background-color: floralwhite;
+        border: 3px solid;
+        border-radius: 5px;
+      }
+      .group{
+        width: 510px;
+        height: 200px;
+        padding: 20px;
+        background-color: darkgreen;
+      }
+      img{
+        float: left;
+        border: solid 1px;
+        width: 50px;
+        height: 74px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .button {
+        display: inline-block;
+        text-decoration: none;
+        background: #5dc3d0;
+        color:black;
+        width: 102px;
+        font-size: 20px;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: inset 0px 3px 0 rgba(255,255,255,0.3), 0 3px 3px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+        border-bottom: solid 3px #549fa9;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
+        transition: .4s;
+        }
+
+      .button:active {
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+        border-bottom: none;
+      }
+      .button2 {
+        display: inline-block;
+        text-decoration: none;
+        background: #ffba78;
+        color:black;
+        width: 300px;
+        height: 100px;
+        font-size: 21px;
+        line-height: 100px;
+        border-radius: 60px;
+        text-align: center;
+        overflow: hidden;
+        font-weight: bold;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+        border-bottom: solid 3px #d29963;
+        text-shadow: -1px -1px rgba(255, 255, 255, 0.43), 1px 1px rgba(0, 0, 0, 0.49);
+        transition: .4s;
+      }
+      .button2:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+        border-bottom: none;
+      }
+      .switch{
+        border: solid 1px;
+        display: inline-block;
+        background-color: dimgrey;
+        position: fixed;
+        bottom: 0px;
+        width: 528px;
+        padding: 10px;
+
+      }
+      .button3 {
+        display: inline-block;
+        text-decoration: none;
+        background: #ffba78;
+        color:black;
+        width: 100%;
+        height: 100px;
+        font-size: 21px;
+        line-height: 100px;
+        border-radius: 60px;
+        text-align: center;
+        overflow: hidden;
+        font-weight: bold;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+        border-bottom: solid 3px #d29963;
+        text-shadow: -1px -1px rgba(255, 255, 255, 0.43), 1px 1px rgba(0, 0, 0, 0.49);
+        transition: .4s;
+      }
+      .total {
+        float: left;
+        position: relative;
+        display: inline-block;
+        margin:15px 15px 0 0;
+        padding: 10px;
+        font-size: 30px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .total:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-left: 10px solid black;
+      }
+      .cause{
+        position: absolute; 
+        top: 200px;
+
+        font-size:80px;
+        animation-name:sample02;
+        animation-duration:5s; 
+        animation-fill-mode: forwards;
+        color:gold;
+        text-shadow: -1px -1px rgba(255, 255, 255, 0.43), 1px 1px rgba(0, 0, 0, 0.49);
+      }
+      @keyframes sample02 {
+      0% {
+      opacity: 0;
+      transform: translateX(-50px);
+      }
+        50%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+      100% {
+      opacity:0;
+      transform: translateX(50px);
+      } 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group">
+      <p id="enemy">相手</p>
+      <div class="total" id="total2">?</div>
+      <div class="card" id="dealer1"></div>
+      <div class="card" id="dealer2"></div>
+      <div class="card" id="dealer3"></div>
+      <div class="card" id="dealer4"></div>
+      <div class="card" id="dealer5"></div>
+      <div class="card" id="dealer6"></div>
+      <div class="card" id="dealer7"></div>
+    </div>
+    <div class="group">
+      <p id="you">あなた</p>
+      <div class="cause" id="cause"></div>
+      <div class="total" id="total"></div>
+      <div class="card" id="you1"></div>
+      <div class="card" id="you2"></div>
+      <div class="card" id="you3"></div>
+      <div class="card" id="you4"></div>
+      <div class="card" id="you5"></div>
+      <div class="card" id="you6"></div>
+      <div class="card" id="you7"></div>
+    </div>
+    <div class="switch" id="suitti">
+      <div class="button2" id="b" onclick="cardpush()" disabled="false">カードを追加</div>
+      <div class="button" id="c" onclick="judge()" disabled="false">GO</div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
