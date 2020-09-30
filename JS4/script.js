@@ -7,9 +7,9 @@
   var result = document.getElementById("result");
 
   var img
-  var gugazo = '<img src="js1.png" width="200">';
+  var gugazo = '<img src="js3.png" width="200">';
   var tyokigazo = '<img src="js2.png" width="200">';
-  var pagazo = '<img src="js3.png" width="200">';
+  var pagazo = '<img src="js1.png" width="200">';
 
   var hand
 
