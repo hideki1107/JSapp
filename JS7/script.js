@@ -1,4 +1,4 @@
-for (i=0; i<52-1; i++){
+for (i=1; i<52; i++){
   document.getElementById("aaa").innerHTML += '<div class="card" id="card'+i+'"onclick="cardclick(this,id)"><img src="ura.png"></div>';
 }
 
